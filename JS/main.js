@@ -99,7 +99,7 @@ async function getHourNow(data){
         const fetchTime = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=9B8ZLZ9AFI2G&format=json&by=zone&zone=${data.location.tz_id}`)
         const getHour = await fetchTime.json()
         const hourNow = getHour.formatted.split(' ')[1].split(':')[0]
-        if(hourNow < 12){
+        if(hourNow < 10){
             return hourNow.split('')[1]
         }else{
             return hourNow
@@ -117,6 +117,7 @@ async function disPlayHour(city){
     }
     else{
         const hourNow = await getHourNow(data)
+        console.log(hourNow)
         const card = `
         <div class="px-2 py-4 col-12 col-md-6 col-xl-3 position-relative d-flex justify-content-center align-items-center">
                 <div id="card-Hour" class="rounded-top-3 card-full shadow">
