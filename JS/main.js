@@ -42,7 +42,7 @@ async function getLocation() {
                 const longitude = position.coords.longitude;
                 const LatLog = `${latitude},${longitude}`;
                 resolve(LatLog);
-            },
+    },
             async () => {
                 try{
                     const response = await fetch('https://api.ipgeolocation.io/ipgeo?apiKey=b4f3ac49de0f401480cdd80a0b9889cc');
@@ -50,6 +50,7 @@ async function getLocation() {
                     resolve(IpLocation.state_prov);
                 }catch{
                     resolve('noInternet');
+                    document.querySelector('.loader-section').classList.replace('d-flex','d-none');
                 }
             }
         );
@@ -96,13 +97,17 @@ function dateObject(dateString){
 }
 async function getHourNow(data){
     if(data !== 'noInternet' && data !== 'noData'){
-        const fetchTime = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=9B8ZLZ9AFI2G&format=json&by=zone&zone=${data.location.tz_id}`)
-        const getHour = await fetchTime.json()
-        const hourNow = getHour.formatted.split(' ')[1].split(':')[0]
-        if(hourNow < 10){
-            return hourNow.split('')[1]
-        }else{
-            return hourNow
+        try{
+            const fetchTime = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=9B8ZLZ9AFI2G&format=json&by=zone&zone=${data.location.tz_id}`)
+            const getHour = await fetchTime.json()
+            const hourNow = getHour.formatted.split(' ')[1].split(':')[0]
+            if(hourNow < 10){
+                return hourNow.split('')[1]
+            }else{
+                return hourNow
+            }
+        }
+        catch{
         }
     }
 }
@@ -117,7 +122,6 @@ async function disPlayHour(city){
     }
     else{
         const hourNow = await getHourNow(data)
-        console.log(hourNow)
         const card = `
         <div class="px-2 py-4 col-12 col-md-6 col-xl-3 position-relative d-flex justify-content-center align-items-center">
                 <div id="card-Hour" class="rounded-top-3 card-full shadow">
