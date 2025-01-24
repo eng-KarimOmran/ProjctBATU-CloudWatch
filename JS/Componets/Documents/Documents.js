@@ -14,7 +14,7 @@ export default function Documents(){
         {name: "عبدالعزيز عبده عبدالعزيز عبده",code: "2320351",task: "Navbar"},
         {name: "مصطفى عاطف عبدالحميد محمد",code: "2320614",task: "Home"},
         {name: "مصطفى رضا علي احمد",code: "2320612",task: "CardWeather"},
-        {name: "معاذ اسامه عبده طه علي",code: "2320624",task: "Index"}
+        {name: "معاذ اسامه عبده طه ",code: "2320624",task: "Index"}
       ];            
     const section = document.querySelector('section')
     section.innerHTML = `
