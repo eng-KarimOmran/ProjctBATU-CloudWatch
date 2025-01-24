@@ -123,6 +123,17 @@ textarea::placeholder{
 .Developed{
     color: #8EC343;
 }
+/* table */
+table{
+    border-collapse: none;
+}
+th{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+
+}
 /* mobile */
 @media (max-width:992px) {
 /* nav */

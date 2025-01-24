@@ -1,5 +1,6 @@
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
+import Documents from '../documents/documents.js';
 import Hour from '../Hour/Hour.js';
 import ThreeDay from '../ThreeDay/ThreeDay.js';
 import Today from '../Today/Today.js';
@@ -16,6 +17,7 @@ export default function Navbar(){
         'Week',
         'About',
         'Contact',
+        'documents'
         
     ]
     document.querySelector('nav div').innerHTML = `
@@ -67,6 +69,9 @@ export default function Navbar(){
                     break;
                 case 'Contact':
                     Contact()
+                    break;
+                case 'documents':
+                    Documents()
                     break;
             }
             ulNav.classList.toggle('click-nav')
