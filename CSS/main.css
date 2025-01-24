@@ -1,0 +1,116 @@
+.list-style-none{
+    list-style: none;
+}
+body{
+    background-color: #2D303D;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+/* nav */
+nav a div img{
+    width: 70px;
+}
+.Bg-nav{
+    background-color: #1E202B;
+    transition: background-color .5s;
+}
+nav ul li a:hover,nav ul li a.active{
+    color: #039FD9 !important;
+    transition: color .5s;
+}
+/* Home */
+.p-t-73{
+    padding-top: 73px;
+}
+section{
+    min-height: calc(100vh - 73px);
+}
+.fa-25{
+    font-size: 25px;
+}
+/* Services */
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #222530;
+    transition: background-color .3s;
+}
+.circle:hover{
+    background-color: #039FD9;
+    transition: background-color .3s;
+}
+.circle-in{
+    width: 170px;
+    height: 170px;
+    background-color: #1B1D23;
+    border-radius: 50%;
+}
+/*   Card-weather */
+.card-weather{
+    max-width: 350px !important;
+}
+.card-weather .head{
+    background-color: #1B1D23;
+}
+.card-weather .img-card{
+    width: 70px;
+}
+.card-weather .body{
+    background-color: #242731;
+}
+/*  About */
+.text-About{
+    max-width: 500px;
+    background-color: #242731;
+}
+/* Contact */
+.message{
+    min-height: 200px !important;
+    max-height: 250px !important;
+}
+.btn-Contact{
+    width: 150px !important;
+}
+textarea::placeholder{
+    color: #03a0d946 !important;
+}
+/* loader  */
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #263238;
+  }
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+  } 
+/* mobile */
+@media (max-width:992px) {
+/* nav */
+    nav ul{
+        height: 0;
+        transition: height .3s;
+        background-color: #1E202B;
+    }
+    .click-nav{
+        height: 205px;
+        transition: height .3s;
+    }
+}
