@@ -11,9 +11,9 @@ export default function Documents(){
         {name: "عبدالرحمن احمد مصطفي سالم",code: "2320314",task: "Week"},
         {name: "عبدالرحمن احمد محمد عبدالرحمن",code: "2320313",task: "Documents"},
         {name: "عبدالعزيز صلاح منصور عمر",code: "2320350",task: "Hour"},
-        {name: "عبدالعزيز عبده عبدالعزيز عبده",code: "2320351",task: "CardWeather"},
+        {name: "عبدالعزيز عبده عبدالعزيز عبده",code: "2320351",task: "Navbar"},
         {name: "مصطفى عاطف عبدالحميد محمد",code: "2320614",task: "Home"},
-        {name: "مصطفى رضا علي احمد",code: "2320612",task: "Navbar Html"},
+        {name: "مصطفى رضا علي احمد",code: "2320612",task: "CardWeather"},
         {name: "معاذ اسامه عبده طه علي",code: "2320624",task: "Index"}
       ];            
     const section = document.querySelector('section')
