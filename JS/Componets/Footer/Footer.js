@@ -11,10 +11,10 @@ export default function Footer(){
         { Name: 'Hala-Eldefrawy', Link: 'https://www.facebook.com/profile.php?id=100056783152088&mibextid=kFxxJD' },
         { Name: 'Moaz-Osama', Link: 'https://www.facebook.com/moaaz.osama.73?mibextid=ZbWKwL' },
         { Name: 'Mostafa-Elmasre', Link: 'https://www.facebook.com/mustafaelmasre10?mibextid=ZbWKwL' },
-        { Name: 'Abdulrahman-Ahmed', Link: '#' },
+        { Name: 'Abdulrahman-Suleiman', Link: 'https://www.facebook.com/share/1GpH7HhkGi/' },
         { Name: 'Mostafa-Reda', Link: 'https://www.facebook.com/profile.php?id=100009880898453&mibextid=ZbWKwL' },
         { Name: 'Mohamed-Fekry', Link: '#' },
-        { Name: 'Abdulrahman-Ahmed', Link: '#' },
+        { Name: 'Abdulrahman-Ahmed', Link: 'https://www.facebook.com/share/1E9XtLuTAB/' },
       ];
       
     document.querySelector('footer').innerHTML = `<div class="px-1 py-3">
