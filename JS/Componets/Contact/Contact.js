@@ -41,7 +41,7 @@ export default function Contact(){
     })
     const btn = document.querySelector('.form-Contact button')
     btn.addEventListener('click',()=>{
-        if(regxMessage.test(Email.value)&&regxMessage.test(message.value)){
+        if(regxEmail.test(Email.value)&&regxMessage.test(message.value)){
             message.value = ''
             message.classList.remove('is-valid')
             Email.value = ''
