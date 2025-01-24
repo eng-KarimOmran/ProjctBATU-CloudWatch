@@ -100,7 +100,29 @@ textarea::placeholder{
   @keyframes rotation {
     0% { transform: rotate(0deg) }
     100% { transform: rotate(360deg)}
-  } 
+  }
+/*  footer */
+.Copyright{
+    border-top: 1px solid rgba(255, 255, 255, 0.089);
+}
+.Copyright ul li{
+    list-style: none;
+    background-color: #1E202B;
+}
+.Copyright ul li:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.Copyright ul li:hover a{
+    color: #FF6464;
+    transition: color .5s;
+}
+.Copyright ul li a{
+    color: #F5A623;
+}
+.Developed{
+    color: #8EC343;
+}
 /* mobile */
 @media (max-width:992px) {
 /* nav */

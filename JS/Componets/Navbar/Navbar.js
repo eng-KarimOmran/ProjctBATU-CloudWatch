@@ -16,6 +16,7 @@ export default function Navbar(){
         'Week',
         'About',
         'Contact',
+        
     ]
     document.querySelector('nav div').innerHTML = `
         <a href="https://eng-karimomran.github.io/ProjctBATU-CloudWatch/" class="text-decoration-none">
