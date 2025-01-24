@@ -14,7 +14,7 @@ export default async function ThreeDay(){
         formattedDate = date.toLocaleDateString("en-US", {weekday: "long",month: "long",});
         cards += `${CardWeather(formattedDate.split(' ')[1],formattedDate.split(' ')[0],Data.location.name,Data.forecast.forecastday[i].day.condition.icon,Data.forecast.forecastday[i].day.avgtemp_c,Data.forecast.forecastday[i].day.condition.text,Data.forecast.forecastday[i].day.avghumidity,Data.forecast.forecastday[i].day.avgvis_km)}`
     }
-    section.innerHTML = `${Search('Today')}
+    section.innerHTML = `${Search('ThreeDay')}
     <div id="disPlayCard" class="d-flex align-items-center flex-wrap justify-content-center mt-3 w-100">
         ${cards}
     </div>`
