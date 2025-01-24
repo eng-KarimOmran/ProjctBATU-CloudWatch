@@ -1,6 +1,6 @@
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
-import Documents from '../documents/documents.js';
+import Documents from '../Documents/Documents.js';
 import Hour from '../Hour/Hour.js';
 import ThreeDay from '../ThreeDay/ThreeDay.js';
 import Today from '../Today/Today.js';
